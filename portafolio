@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title">🚀 Mi Portafolio</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <h2 class="fade-in">Bienvenido a mi Portafolio</h2>
+        <p class="fade-in">🚀 Desarrollo <span class="highlight">rápido, moderno y atractivo</span>.</p>
+        <a href="#contacto" class="btn-primary">Contrátame Ahora</a>
+    </section>
+    <section id="sobre-mi" class="section-alt">
+        <h2 class="fade-in">Sobre Mí</h2>
+        <p class="fade-in">Soy un desarrollador web empezando a crear páginas web adaptandose perfectamente a cualquier modelo de negocio <span class="highlight">altamente interactivas</span>, modernas y atractivas. 🚀</p>
+    </section>
+    <section id="proyectos">
+        <h2 class="fade-in">Algunos de mis diseños para proyectos:</h2>
+        <div class="proyectos-container">
+            <div class="proyecto"><img src="../HTML/trabajos páginas web(clase)/img/a0f69478-d6a8-451f-9356-f38e34af6564.webp" alt="Proyecto 1"><p>🔥 Landing Page impactante para empresa emergente. 💼</p></div>
+            <div class="proyecto"><img src="../HTML/trabajos páginas web(clase)/img/DALL·E 2025-03-15 14.33.17 - An interactive and visually dynamic portfolio website. The design is sleek, with smooth animations, vibrant accent colors, and engaging transitions. F.webp" alt="Proyecto 2"><p>🎨 Portfolio interactivo con animaciones dinámicas.</p></div>
+        </div>
+    </section>
+    <section id="servicios" class="section-alt">
+        <h2 class="fade-in">Servicios</h2>
+        <ul class="fade-in">
+            <li>✅ <strong>Diseño web de alta conversión</strong> con UI/UX optimizado.</li>
+            <li>✅ <strong>Animaciones interactivas</strong> que cautivan a los usuarios.</li>
+            <li>✅ <strong>SEO avanzado</strong> para atraer tráfico y clientes.</li>
+            <li>✅ <strong>Webs ultra rápidas</strong> y responsivas.</li>
+        </ul>
+        <a href="#contacto" class="btn-primary">Reserva una Consulta Gratis</a>
+    </section>
+    <section id="contacto">
+        <h2 class="fade-in">¡Hablemos!</h2>
+        <form class="fade-in">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Cuéntame tu idea" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Mi Portafolio | Creado con 💻 y pasión.</p>
+    </footer>
+</body>
+</html>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #0a192f;
+    color: #e0e0e0;
+}
+header {
+    background: linear-gradient(90deg, #ff4500, #ff6600);
+    color: white;
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+}
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border-bottom: 10px solid #ff6600;
+    font-size: 1.8rem;
+}
+section {
+    padding: 120px 20px;
+    border-bottom: 8px solid #ff6600;
+    font-size: 1.5rem;
+}
+.section-alt {
+    background: linear-gradient(135deg, #222, #1c1c1e);
+    color: white;
+    padding: 140px 20px;
+    border-radius: 0 0 50px 50px;
+}
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+.proyecto {
+    background: #222;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 1.3rem;
+}
+.proyecto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(255, 102, 0, 0.6);
+}
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.proyecto img:hover {
+    transform: scale(1.15);
+}
+.proyecto p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #ffdd57;
+    font-weight: bold;
+}
+</style>
